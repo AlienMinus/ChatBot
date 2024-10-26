@@ -1,0 +1,13 @@
+{
+    "responses": {
+      "hello": "Hello! How can I assist you today?",
+      "hi": "Hello there! What can I do for you?",
+      "help": "I'm here to help. Please tell me more about what you need assistance with.",
+      "bye": "Goodbye! Feel free to return if you have more questions.",
+      "price": "For pricing details, please visit our pricing page or let me know if you'd like more specifics!",
+      "products": "We offer a variety of products. Can you specify what you are looking for?",
+      "example_key_1": "Example response 1.",
+      "example_key_2": "Example response 2."
+    }
+  }
+  

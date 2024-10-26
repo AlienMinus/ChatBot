@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eri.Aerial</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+  <div class="chatbox">
+    <div class="chatbox-header">
+        Eri.Aerial
+        <label>
+            <input type="checkbox" id="darkModeToggle" />
+            Dark Mode
+        </label>
+    </div>
+    <div class="chatbox-messages" id="messages">
+      <!-- Chat messages will appear here -->
+    </div>
+    <div class="chatbox-input-area">
+      <input type="text" id="userInput" class="chatbox-input" placeholder="Type a message..." />
+      <button class="send-button" onclick="sendMessage()">👉🏻</button>
+      <div class="typing-indicator" id="typingIndicator">Bot is typing...</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #f408dc, #6633f1); /* Gradient background for the body */
+}
+
+/* Chatbox Container */
+.chatbox {
+  width: 40%;
+  max-width: 90%;
+  border: solid white;
+  background: #ffffff; /* White background for the chatbox */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Chat Header */
+.chatbox-header {
+  background: linear-gradient(45deg, #08a439, #3adfe4); /* Header background */
+  border: solid white;
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Chat Messages */
+.chatbox-messages {
+  padding: 1rem;
+  flex-grow: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 400px; /* Set a maximum height for the messages area */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #f9f9f9; /* Light background for messages area */
+}
+
+/* Message Styling */
+.message {
+  max-width: 80%;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Specific User and Bot Messages */
+.bot-message {
+  background-color: #f0f2f5; /* Bot message background */
+  align-self: flex-start;
+  color: #000; /* Dark text for better readability */
+}
+
+.user-message {
+  background-color: #6633f1; /* User message background */
+  color: white;
+  align-self: flex-end;
+}
+
+/* Typing Indicator */
+.typing-indicator {
+  display: none;
+  font-size: 0.9rem;
+  color: #999;
+  margin-left: 0.5rem;
+}
+
+/* Input Area */
+.chatbox-input-area {
+  display: flex;
+  border-top: 1px solid #ddd;
+  background-color: #ffffff; /* Background for input area */
+}
+
+/* Input Field */
+.chatbox-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Send Button */
+.send-button {
+  background: linear-gradient(45deg, #08a439, #3adfe4); /* Button background */
+  color: rgb(50, 48, 48);
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.send-button:hover {
+  background-color: #5529c0; /* Button hover color */
+}
+
+/* Button Links */
+.button-link {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  color: white;
+  text-decoration: none; /* Changed from 'solid' to 'none' */
+  background-color: #0e11c4; /* Link button color */
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button-link:hover {
+  background-color: #0a45e7; /* Link button hover color */
+}
+/* Dark Mode Styles */
+body.dark-mode {
+  background: linear-gradient(45deg, #000000, #034612); /* Dark gradient background for the body */
+}
+
+.chatbox.dark-mode {
+  background: #444444; /* Dark background for the chatbox */
+  box-shadow: 0 0 20px rgba(10, 210, 187, 0.8);
+}
+
+.chatbox-header.dark-mode {
+  background: linear-gradient(45deg, #1c1c1c, #2a2a2a); /* Dark gradient for header */
+  color: #ffffff; /* White text for header */
+}
+
+.chatbox-messages.dark-mode {
+  background-color: #555555; /* Dark background for messages area */
+}
+
+.message.dark-mode {
+  color: #ffffff; /* White text for messages */
+}
+
+.bot-message.dark-mode {
+  background-color: #666666; /* Darker bot message background */
+  color: #ffffff; /* White text for better visibility */
+}
+
+.user-message.dark-mode {
+  background-color: #1a73e8; /* Change user message color for better contrast */
+  color: white;
+}
+
+.chatbox-input-area.dark-mode {
+  background-color: #333333; /* Dark background for input area */
+}
+
+.chatbox-input.dark-mode {
+  background: #444444; /* Dark background for input field */
+  color: white; /* White text for input field */
+}
+
+.send-button.dark-mode {
+  background: linear-gradient(45deg, #1c1c1c, #2a2a2a); /* Dark gradient for button */
+  color: white; /* White text for button */
+}
+
+.send-button.dark-mode:hover {
+  background-color: #0a45e7; /* Adjust hover color for dark mode */
+}
+
+.button-link.dark-mode {
+  background-color: #007bff; /* Change link button color for dark mode */
+}
+
+.button-link.dark-mode:hover {
+  background-color: #0056b3; /* Adjust hover color for link button */
+}
